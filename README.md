@@ -1,1 +1,1 @@
-=> A twitter clone made with nodejs
+- A twitter clone made with nodejs

@@ -5,8 +5,16 @@ block content
     h1 Login
     form#loginForm(method="post")
       p.errorMessage #{errorMessage}
-      input(type="text", name="username", placeholder="username or email", value=username required="")
-      input(type="password", name="password", placeholder="password", required="")
+
+      //- uncomment the fields below upon completion dev
+      //- input(type="text", name="username", placeholder="username or email", value=username required="")
+      //- input(type="password", name="password", placeholder="password", required="")
+
+      //- the lines below are for purposes of dev, to avoid having to login every time we change code
+      //-  remove the lines below after completing development
+      input(type="text", name="username", placeholder="username or email", value='test' required="")
+      input(type="password", name="password", placeholder="password", value='test', required="")
+
       input(type="submit", value="Login")
 
     a(href="/register") Need an account? Register here 

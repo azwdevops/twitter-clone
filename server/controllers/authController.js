@@ -73,7 +73,6 @@ module.exports.login = async (req, res, next) => {
       req.body.password,
       user.password
     );
-    console.log("####################");
     if (!validPassword) {
       payload.errorMessage = "Invalid login credentials";
       return res.status(200).render("login", payload);
